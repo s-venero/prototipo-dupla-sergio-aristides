@@ -161,6 +161,32 @@
       color: var(--azul);
       font-weight: 800;
     }
+
+    /* Slide de depoimento */
+    .depoimento {
+      max-width: 640px;
+      margin-top: 2rem;
+      padding: 2rem 2.2rem;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      border-radius: 24px;
+    }
+
+    .depoimento blockquote {
+      font-size: clamp(1.3rem, 2.6vw, 1.9rem);
+      line-height: 1.4;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .depoimento figcaption {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .depoimento figcaption strong {
+      color: var(--branco);
+    }
   </style>
 </head>
 <body>
@@ -185,6 +211,19 @@
         <li>Você ganha <strong>R$ 50</strong></li>
         <li>Sem limite: quanto mais indicar, mais ganha</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="conteudo">
+      <div class="marca">ArenaCash</div>
+      <h1>Quem indicou, <span>aprovou</span></h1>
+      <figure class="depoimento">
+        <blockquote>
+          “Indiquei um amigo e ganhei R$ 50. Foi o jeito mais fácil de conseguir um dinheiro extra.”
+        </blockquote>
+        <figcaption><strong>Marina Duarte</strong> · cliente fictícia da ArenaCash</figcaption>
+      </figure>
     </div>
   </section>
 
