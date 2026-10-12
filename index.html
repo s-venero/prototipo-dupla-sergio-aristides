@@ -123,6 +123,32 @@
       outline: 3px solid #bfdbfe;
       outline-offset: 3px;
     }
+
+    /* Slide de depoimento */
+    .depoimento {
+      max-width: 640px;
+      margin-top: 2rem;
+      padding: 2rem 2.2rem;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      border-radius: 24px;
+    }
+
+    .depoimento blockquote {
+      font-size: clamp(1.3rem, 2.6vw, 1.9rem);
+      line-height: 1.4;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .depoimento figcaption {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .depoimento figcaption strong {
+      color: var(--branco);
+    }
   </style>
 </head>
 <body>
@@ -135,6 +161,19 @@
         Convide quem você gosta para conhecer a ArenaCash e receba R$ 50 pela indicação.
       </p>
       <a class="botao" href="#">Quero indicar</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="conteudo">
+      <div class="marca">ArenaCash</div>
+      <h1>Quem indicou, <span>aprovou</span></h1>
+      <figure class="depoimento">
+        <blockquote>
+          “Indiquei dois amigos em uma tarde e o bônus caiu na conta no mesmo dia. Foi o jeito mais fácil de ganhar R$ 100.”
+        </blockquote>
+        <figcaption><strong>Marina Duarte</strong> · cliente fictícia da ArenaCash</figcaption>
+      </figure>
     </div>
   </section>
 
