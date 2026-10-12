@@ -123,6 +123,40 @@
       outline: 3px solid #bfdbfe;
       outline-offset: 3px;
     }
+
+    /* Slide de benefícios */
+    .beneficios {
+      list-style: none;
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+      max-width: 560px;
+    }
+
+    .beneficios li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-weight: 600;
+      padding: 1.1rem 1.4rem;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      border-radius: 20px;
+    }
+
+    .beneficios li::before {
+      content: "✓";
+      flex: none;
+      display: grid;
+      place-items: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--branco);
+      color: var(--azul);
+      font-weight: 800;
+    }
   </style>
 </head>
 <body>
@@ -135,6 +169,18 @@
         Convide quem você gosta para conhecer a ArenaCash e receba R$ 50 pela indicação.
       </p>
       <a class="botao" href="#">Quero indicar</a>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="conteudo">
+      <div class="marca">ArenaCash</div>
+      <h1>Por que <span>indicar?</span></h1>
+      <ul class="beneficios">
+        <li>R$ 50 pro indicado</li>
+        <li>R$ 50 pra quem indicou</li>
+        <li>Sem limite de indicações</li>
+      </ul>
     </div>
   </section>
 
